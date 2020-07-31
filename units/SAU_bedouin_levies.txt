@@ -1,0 +1,50 @@
+﻿division_template = {
+	name = "Badawin Ikhawat"		# 'Infantry Division' - Represents local tribal levies (militia)
+	is_locked = yes
+	division_names_group = SAU_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+units = {
+	##### Bedouin Levies #####
+	division = {
+		name = "Badawin Ikhawat al-1i"
+		location = 12727
+		division_template = "Badawin Ikhawat"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Badawin Ikhawat al-2i"
+		location = 12727
+		division_template = "Badawin Ikhawat"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Badawin Ikhawat al-3i"
+		location = 12727
+		division_template = "Badawin Ikhawat"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Badawin Ikhawat al-4i"
+		location = 12727
+		division_template = "Badawin Ikhawat"
+		start_equipment_factor = 0.3
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "Badawin Ikhawat al-5i"
+		location = 12727
+		division_template = "Badawin Ikhawat"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+	}
+}

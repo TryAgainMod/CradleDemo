@@ -1,0 +1,149 @@
+on_actions = {
+	on_capitulation = {
+   		effect = {
+   			if = {
+   				limit = {
+   					FROM = {
+   						original_tag = OMA
+   						has_country_leader = {
+						    name = "Said bin Taimur"
+						    ruling_only = yes
+						}
+   					}
+   				}
+   				country_event = {
+   					id = oman.102
+   					days = 1
+   				}
+   			}
+   			if = {
+   				limit = {
+   					FROM = {
+   						original_tag = OMA
+   						has_country_leader = {
+						    name = "Ghalib Alhinai"
+						    ruling_only = yes
+						}
+   					}
+   				}
+   				country_event = {
+   					id = oman.106
+   					days = 1
+   				}
+   			}
+   		}
+   	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = {
+					ENG = {
+						has_global_flag = zanzibar_revolt
+					}
+				}
+				ENG = {
+					add_to_variable = {
+					    var = zanzibar_revolt_days
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = { 
+					OR = {
+						TAG = UAE
+						TAG = BHR
+						TAG = QAT
+						TAG = KUW
+						TAG = ISR
+					}
+				} 
+				drop_cosmetic_tag = yes
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AFG
+						tag = ALB
+						tag = ALG
+						tag = AZR
+						tag = BHR
+						tag = BAN
+						tag = BOS
+						tag = CHA
+						tag = DJI
+						tag = EGY
+						tag = ERI
+						tag = GNA
+						tag = INS
+						tag = IRQ
+						tag = JOR
+						tag = KAZ
+						tag = KEN
+						tag = KUW
+						tag = KYR
+						tag = LBA
+						tag = LEB
+						tag = MAL
+						tag = MLD
+						tag = MLI
+						tag = MOR
+						tag = MRT
+						tag = NGR
+						tag = OMA
+						tag = PAK
+						tag = PAL
+						tag = PER
+						tag = QAT
+						tag = SAU
+						tag = SEN
+						tag = SIE
+						tag = SOM
+						tag = SUD
+						tag = SYR
+						tag = TAJ
+						tag = TMS
+						tag = TUN
+						tag = TUR
+						tag = TZN
+						tag = UAE
+						tag = UZB
+						tag = WES
+						tag = YEM
+					}
+				}
+				set_country_flag = muslim_nation
+			}
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						original_tag = YEM
+						NOT = {
+							has_country_flag = YEM_peace_offer
+						}
+					}
+					FROM = { has_war_with = ROOT }
+					FROM.FROM = { state = 808 }
+				}
+				set_country_flag = YEM_peace_offer
+				country_event = {
+					id = yemen.17
+				}
+			}
+		}
+	}
+}

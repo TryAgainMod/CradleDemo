@@ -1,0 +1,151 @@
+## RURAL POPULATION
+SAU_large_rural_population_level_down = {
+	if = {
+		limit = {
+			has_idea = SAU_large_rural_population_3
+		}
+		remove_ideas = SAU_large_rural_population_3
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_large_rural_population_2
+		}
+		swap_ideas = {
+			remove_idea = SAU_large_rural_population_2
+			add_idea = SAU_large_rural_population_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_large_rural_population_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_large_rural_population_1
+			add_idea = SAU_large_rural_population_2
+		}
+	}
+}
+
+## HAJJ-BASED ECONOMY
+SAU_hajj_based_economy_level_down = {
+	if = {
+		limit = {
+			has_idea = SAU_hajj_based_economy_3
+		}
+		remove_ideas = SAU_hajj_based_economy_3
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_hajj_based_economy_2
+		}
+		swap_ideas = {
+			remove_idea = SAU_hajj_based_economy_2
+			add_idea = SAU_hajj_based_economy_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_hajj_based_economy_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_hajj_based_economy_1
+			add_idea = SAU_hajj_based_economy_2
+		}
+	}
+}
+
+## INEXPERIENCED ARMY
+SAU_inexperienced_army_level_down = {
+	if = {
+		limit = {
+			has_idea = SAU_inexperienced_army_3
+		}
+		remove_ideas = SAU_inexperienced_army_3
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_inexperienced_army_2
+		}
+		swap_ideas = {
+			remove_idea = SAU_inexperienced_army_2
+			add_idea = SAU_inexperienced_army_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SAU_inexperienced_army_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_inexperienced_army_1
+			add_idea = SAU_inexperienced_army_2
+		}
+	}
+}
+
+## OIL MONEY
+SAU_oil_money_level_up = {
+	if = {
+		limit = {
+			has_idea = SAU_oil_money_1
+		}
+		swap_ideas = {
+			remove_idea = SAU_oil_money_1
+			add_idea = SAU_oil_money_2
+		}
+	}
+	else = {
+		add_ideas = SAU_oil_money_1
+	}
+}
+
+## IKHWAN RESISTANCE
+SAU_ikhwan_unrest_level_up = {
+	if = {
+		limit = {
+			has_idea = SAU_ikhwan_unrest
+		}
+		swap_ideas = {
+			remove_idea = SAU_ikhwan_unrest
+			add_idea = SAU_ikhwan_unrest_2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = SAU_ikhwan_unrest_2
+		}
+		swap_ideas = {
+			remove_idea = SAU_ikhwan_unrest_2
+			add_idea = SAU_ikhwan_unrest_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = SAU_ikhwan_unrest_3
+		}
+		swap_ideas = {
+			remove_idea = SAU_ikhwan_unrest_3
+			add_idea = SAU_ikhwan_unrest_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = SAU_ikhwan_unrest_4
+		}
+		swap_ideas = {
+			remove_idea = SAU_ikhwan_unrest_4
+			add_idea = SAU_ikhwan_unrest_5
+		}
+	}
+	if = {
+		limit = {
+			has_idea = SAU_ikhwan_unrest_5
+		}
+		swap_ideas = {
+			remove_idea = SAU_ikhwan_unrest_5
+			add_idea = SAU_ikhwan_unrest_6
+		}
+	}
+	else = {
+		add_ideas = SAU_ikhwan_unrest
+	}
+}

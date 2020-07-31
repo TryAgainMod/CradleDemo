@@ -1,0 +1,737 @@
+ideas = {
+    country = {
+        SAU_treaty_of_taif = {
+			picture = sau_treaty_of_taif
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+                justify_war_goal_time = 0.20
+            }
+        }
+
+        SAU_inexperienced_army_1 = {
+			picture = sau_inexperienced_army
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				max_planning = -0.15
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				military_leader_cost_factor = 1.00
+            }
+        }
+
+        SAU_inexperienced_army_2 = {
+			picture = sau_inexperienced_army
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				max_planning = -0.10
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+            }
+        }
+
+        SAU_inexperienced_army_3 = {
+			picture = sau_inexperienced_army
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				max_planning = -0.05
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+            }
+        }
+
+        SAU_large_rural_population_1 = {
+			picture = sau_pastoral_population
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				conscription_factor = -0.35
+            }
+        }
+
+        SAU_large_rural_population_2 = {
+			picture = sau_pastoral_population
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				conscription_factor = -0.30
+            }
+        }
+	
+        SAU_large_rural_population_3 = {
+			picture = sau_pastoral_population
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				conscription_factor = -0.25
+            }
+        }
+
+        SAU_ulama = {
+			picture = sau_ulama
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				research_speed_factor = -0.10
+            }
+        }
+
+        SAU_hajj_based_economy_1 = {
+			picture = sau_hajj_based_economy
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				political_power_factor = -0.30
+				production_speed_buildings_factor = -0.20
+            }
+        }
+
+        SAU_hajj_based_economy_2 = {
+			picture = sau_hajj_based_economy
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				political_power_factor = -0.20
+				production_speed_buildings_factor = -0.10
+			}
+        }
+		
+		SAU_hajj_based_economy_3 = {
+			picture = sau_hajj_based_economy
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				political_power_factor = -0.10
+			}
+        }
+
+        SAU_ikhwan_unrest = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.05
+            }
+        }
+		
+		SAU_ikhwan_unrest_2 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.10
+            }
+        }
+		
+		SAU_ikhwan_unrest_3 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.15
+            }
+        }
+		
+		SAU_ikhwan_unrest_4 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.20
+            }
+        }
+		
+		SAU_ikhwan_unrest_5 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.25
+            }
+        }
+		
+		SAU_ikhwan_unrest_6 = {
+			picture = sau_ikhwan
+            allowed = {
+                original_tag = SAU
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				stability_factor = -0.30
+            }
+        }
+
+        SAU_diversify_economy_idea = {
+			picture = man_five_year_plan_industry
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				production_speed_industrial_complex_factor = 0.20
+            }
+        }
+
+        SAU_oil_money_1 = {
+			picture = generic_foreign_capital
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				consumer_goods_factor = -0.03
+			}
+        }
+
+        SAU_oil_money_2 = {
+			picture = generic_foreign_capital
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				consumer_goods_factor = -0.08
+			}
+        }
+	
+        SAU_factory_loans = {
+			picture = generic_foreign_capital
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				consumer_goods_factor = 0.10
+				political_power_gain = -0.25
+			}
+        }
+		
+		SAU_ensure_high_command_support_idea = {
+			picture = generic_foreign_capital
+            allowed = {
+                original_tag = SAU
+				always = no
+            }
+			allowed_civil_war = {
+				always = yes
+			}
+            modifier = {
+				command_power_gain_mult = 0.50
+			}
+        }
+		
+		SAU_propagandize_the_army = {
+			picture = chi_army_corruption3
+				allowed = {
+					original_tag = SAU
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					fascism_drift = 0.10
+				}
+        }
+	}
+	
+########################################	
+######################################## MINISTERS
+	political_advisor = {
+		fawzi_al_qawuqji = { ## Arab nationalist
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			available = {
+				if = {
+					has_completed_focus = SAU_reinvite_fawzi
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { fascist_demagogue }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		nazir_tyuryakulov = { ## Soviet Ambassador to Saudi Arabia
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { communist_revolutionary }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		asad_al_faqih = { ## Saudi Arabian Minister to the US
+
+			allowed = {
+				original_tag = SAU
+##				has_completed_focus = ## SAU_american_diplomatic_mission
+			}
+			
+			traits = { democratic_reformer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mohamed_bin_awad_bin_laden = { ## Ran the biggest construction company in Saudi Arabia and refurbished the mosques in Makkah and Madinah.
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { quartermaster_general }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		faisal_bin_abdulaziz = { ## Foreign minister of Saudi Arabia
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { compassionate_gentleman }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		abdullah_ibn_sulaiman_al_hamdan = { ## Minister of Finance, enterpreneur, advisor to Abdulaziz
+
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { financial_expert }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jawhara_bint_faisal = { ## Convinced Abdulaziz to regain the glory of the House of Saud at a young age. One of his most trusted and influential advisors.
+
+			allowed = {
+				original_tag = SAU
+			}
+			available = {
+				OR = {
+					has_completed_focus = SAU_ensure_family_support
+					NOT = {
+						has_country_flag = abdulaziz_dead
+					}
+				}
+			}
+			traits = { smooth_talking_charmer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		noura_bint_abdul_rahman_al_saud = { ## Very progressive, but Abdulaziz admired her greatly. One of his main advisors.
+
+			allowed = {
+				original_tag = SAU
+			}
+			available = {
+				OR = {
+					has_completed_focus = SAU_ensure_family_support
+					NOT = {
+						has_country_flag = abdulaziz_dead
+					}
+				}
+			}
+			traits = { anti_ulama }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		abdullah_bin_abdul_raman = { ## Prominent advisor to Abdulaziz, assisted him with many things during his reign, involved in state affairs until his death
+		
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { silent_workhorse }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		khalid_al_gargani = { ## Met with Hitler
+		
+			allowed = {
+				original_tag = SAU
+##				has_completed_focus = ## SAU_german_diplomatic_mission
+			}
+			
+			traits = { fascist_demagogue }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+##############################
+############################## HIGH COMMAND
+	army_chief = {
+		
+		abdulaziz_ibn_saud = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+			available = {
+				NOT = {
+					has_country_flag = abdulaziz_dead
+				}
+			}
+
+			cost = 50
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		faisal_bin_abdulaziz_al_saud = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			available = {
+				NOT = {
+					has_country_flag = abdulaziz_dead
+				}
+			}
+
+			cost = 50
+			
+			traits = { army_chief_organizational_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		mansour_bin_abdulaziz_al_saud = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			available = {
+				OR = {
+					has_completed_focus = SAU_ensure_family_support
+					NOT = {
+						has_country_flag = abdulaziz_dead
+					}
+				}
+			}
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	air_chief = {
+		
+		abdullah_al_mandili = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+
+			traits = { air_chief_ground_support_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		rashid_al_saleh = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+
+			traits = { air_pilot_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	high_command = {
+
+		mohamed_tarek_abdelkader_afrique = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			available = {
+				has_completed_focus = SAU_form_the_general_staff
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		jafar_bek_pilot = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { army_regrouping_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		said_bin_abdullah_kurdi = {
+			
+#			picture = 
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+##############################
+############################## COMPANIES
+	materiel_manufacturer = {
+
+		designer = yes
+
+		haji_husein_alireza = {
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+		}
+	}
+
+	industrial_concern = {
+		
+		alawwal_bank = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		bin_ladin_group = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.15
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		house_of_alireza = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.20
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		aramco = {
+			
+			cost = 150
+			
+			allowed = {
+				original_tag = SAU
+			}
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			modifier = {
+				production_speed_synthetic_refinery_factor  = 0.15
+				local_resources_factor = 0.20
+			}
+			
+			traits = { industrial_concern }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,307 @@
+ideas = {
+	# MILITARY
+
+
+	political_advisor = {
+
+		YEM_ahmad_muhammad_numan = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { democratic_reformer }
+		}
+
+		YEM_pietro_badoglio = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { fascist_demagogue }
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+		}
+
+		YEM_abdullah_as_sallal = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { communist_revolutionary }
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+				NOT = {
+					has_completed_focus = YEM_riseofdemocracy
+				}
+			}
+		}
+
+		YEM_ali_nasser_al_qardaei = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { popular_figurehead }
+		}
+
+		YEM_ahmad_bin_yahya = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { silent_workhorse }
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = democratic
+						has_completed_focus = YEM_alwaziri_coup
+					}
+				}
+			}
+		}
+
+		YEM_hassan_bin_yahya = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { quartermaster_general }
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = democratic
+						has_completed_focus = YEM_alwaziri_coup
+					}
+				}
+			}
+		}
+
+		YEM_abdullah_al_wazir = {
+			allowed = {
+				original_tag = YEM
+			}
+			traits = { prince_of_terror }
+			available = {
+				NOT = {
+					OR = {
+						has_government = communism
+						has_government = democratic
+						has_country_flag = YEM_brotherhood_assassination
+					}
+				}
+			}
+		}
+	}
+
+	army_chief = {
+
+		YEM_abdullah_as_sallal_military = {
+			
+			allowed = {
+				original_tag = YEM
+			}		
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YEM_ahmad_bin_yahya_military = {
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+
+		YEM_mansur_al_badr = {
+
+			picture = generic_air_arab_3
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { air_chief_safety_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YEM_burkan_salem = {
+
+			picture = generic_air_arab_2
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}
+
+	navy_chief = {
+
+		YEM_jabir_khaldun = {
+
+			picture = generic_navy_arab_2
+			
+			allowed = {
+				original_tag = YEM
+			}
+					
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YEM_hisham_ibn_salim = {
+
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = YEM
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+
+		YEM_abd_al_husseini = {
+			
+			picture = generic_army_arab_1
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { army_artillery_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		YEM_ali_halukeh = {
+
+			picture = generic_air_arab_3
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { air_air_superiority_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		YEM_hisham_ibn_uthman = {
+			
+			picture = generic_army_arab_2
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		YEM_ja_far_al_hijazi = {
+
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+	}	
+
+	theorist = {
+		YEM_sa_ud_ibn_umar = {
+			
+			picture = generic_army_arab_2
+
+			allowed = {
+				original_tag = YEM
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		YEM_yusuf_ibn_khalid = {
+
+			picture = generic_navy_arab_3
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}	
+
+		YEM_khalid_ibn_yusuf = {
+
+			picture = generic_air_arab_2
+			
+			allowed = {
+				original_tag = YEM
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+}
+
